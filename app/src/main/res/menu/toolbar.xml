@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Game information"
+        android:id="@+id/toGameinformation"
+        android:icon="@drawable/ic_baseline_info_24"
+        />
+    <item android:title="Feedback"
+        android:id="@+id/toFeedback"
+        android:icon="@drawable/ic_baseline_mail_24"/>
+</menu>
