@@ -34,12 +34,10 @@ public class MainActivity extends AppCompatActivity {
         appName.setAnimation(bottomAnim);
         slogan.setAnimation(bottomAnim);
 
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Intent intent = new Intent(MainActivity.this, QuizMenu.class);
-                startActivity(intent);
-            }
+        new Handler().postDelayed(() -> {
+            Intent intent = new Intent(MainActivity.this, QuizMenu.class);
+            startActivity(intent);
+
         },5000);
     }
 }
