@@ -9,6 +9,7 @@ import androidx.navigation.ui.NavigationUI;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -20,12 +21,19 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 public class QuizMenu extends AppCompatActivity {
 
 //    ActivityMainBinding binding;
+    MediaPlayer mainTheme;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 //        binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(R.layout.activity_quiz_menu);
+        mainTheme = MediaPlayer.create(QuizMenu.this,R.raw.boom);
+        if (!mainTheme.isPlaying())
+        {
+            mainTheme.start();
+            mainTheme.setLooping(true);
+        }
 
 
         NavHostFragment navHostFragment =(NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment);
@@ -72,4 +80,9 @@ public class QuizMenu extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    @Override
+    protected void onPause() {
+        super.onPause();
+        mainTheme.release();
+    }
 }
