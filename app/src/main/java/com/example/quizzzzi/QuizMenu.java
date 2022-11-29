@@ -28,7 +28,9 @@ public class QuizMenu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 //        binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(R.layout.activity_quiz_menu);
+
         mainTheme = MediaPlayer.create(QuizMenu.this,R.raw.boom);
+        // music loop
         if (!mainTheme.isPlaying())
         {
             mainTheme.start();
@@ -67,7 +69,7 @@ public class QuizMenu extends AppCompatActivity {
                 sendmail.setType("text/plain");
                 sendmail.putExtra(Intent.EXTRA_EMAIL,
                         new String[]{"Dohieu825@gmail.com", "huytuduelist@gmail.com"});
-                sendmail.putExtra(Intent.EXTRA_SUBJECT,"Can gop y");
+                sendmail.putExtra(Intent.EXTRA_SUBJECT,"Góp Ý");
 
                 if(sendmail.resolveActivity(getPackageManager()) != null){
                     startActivity(sendmail);

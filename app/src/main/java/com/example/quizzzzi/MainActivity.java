@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         appName.setAnimation(bottomAnim);
         slogan.setAnimation(bottomAnim);
 
-        // Chuyển sang Menu chọn câu hỏi theo chủ đề
+        // Chuyển sang Menu chính
         new Handler().postDelayed(() -> {
             Intent intent = new Intent(MainActivity.this, QuizMenu.class);
             startActivity(intent);
