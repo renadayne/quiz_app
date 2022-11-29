@@ -28,8 +28,8 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="163dp"
+        android:layout_height="62dp"
         android:fontFamily="@font/bangers_regular"
         android:text="Developer by"
         android:textColor="#001312"
@@ -41,8 +41,8 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="103dp"
+        android:layout_height="39dp"
         android:fontFamily="@font/bangers_regular"
         android:text="Nguyen Huy Tu"
         android:textSize="20sp"
@@ -52,8 +52,8 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="98dp"
+        android:layout_height="36dp"
         android:fontFamily="@font/bangers_regular"
         android:text="Do Xuan Hieu"
         android:textSize="20sp"
@@ -63,8 +63,8 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="240dp"
+        android:layout_height="27dp"
         android:drawableLeft="@drawable/ic_baseline_mail_24"
         android:text="Contact: Dohieu825@gmail.com"
         app:layout_constraintEnd_toEndOf="parent"

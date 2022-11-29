@@ -7,13 +7,14 @@ import androidx.navigation.Navigation;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.NavigationUI;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-import com.example.quizzzzi.databinding.ActivityMainBinding;
+//import com.example.quizzzzi.databinding.ActivityMainBinding;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class QuizMenu extends AppCompatActivity {
@@ -28,6 +29,7 @@ public class QuizMenu extends AppCompatActivity {
 
 
         NavHostFragment navHostFragment =(NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment);
+        assert navHostFragment != null;
         NavController navController = navHostFragment.getNavController();
         BottomNavigationView bottomNav = findViewById(R.id.bottom_nav);
         NavigationUI.setupWithNavController(bottomNav,navController);
@@ -39,6 +41,7 @@ public class QuizMenu extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
     }
 
+    @SuppressLint({"QueryPermissionsNeeded", "NonConstantResourceId"})
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         NavController Navcontroller = Navigation.findNavController(this, R.id.nav_host_fragment);
@@ -55,7 +58,7 @@ public class QuizMenu extends AppCompatActivity {
                 Intent sendmail = new Intent(Intent.ACTION_SEND);
                 sendmail.setType("text/plain");
                 sendmail.putExtra(Intent.EXTRA_EMAIL,
-                        new String[]{"Dohieu825@gmail.com"});
+                        new String[]{"Dohieu825@gmail.com", "huytuduelist@gmail.com"});
                 sendmail.putExtra(Intent.EXTRA_SUBJECT,"Can gop y");
 
                 if(sendmail.resolveActivity(getPackageManager()) != null){

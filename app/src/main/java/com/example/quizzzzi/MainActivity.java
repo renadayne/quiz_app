@@ -34,10 +34,11 @@ public class MainActivity extends AppCompatActivity {
         appName.setAnimation(bottomAnim);
         slogan.setAnimation(bottomAnim);
 
+        // Chuyển sang Menu chọn câu hỏi theo chủ đề
         new Handler().postDelayed(() -> {
             Intent intent = new Intent(MainActivity.this, QuizMenu.class);
             startActivity(intent);
-
+            finish();
         },5000);
     }
 }
