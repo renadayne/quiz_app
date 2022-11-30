@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/inforFragment">
+    app:startDestination="@id/homeFragment">
 
     <fragment
         android:id="@+id/inforFragment"
@@ -15,4 +15,9 @@
         android:name="com.example.quizzzzi.feedbackFragment"
         android:label="fragment_feedback"
         tools:layout="@layout/fragment_feedback" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.quizzzzi.homeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
 </navigation>

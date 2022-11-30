@@ -17,6 +17,7 @@ import android.widget.Toast;
 
 //import com.example.quizzzzi.databinding.ActivityMainBinding;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationBarView;
 
 public class QuizMenu extends AppCompatActivity {
 
@@ -43,6 +44,11 @@ public class QuizMenu extends AppCompatActivity {
         NavController navController = navHostFragment.getNavController();
         BottomNavigationView bottomNav = findViewById(R.id.bottom_nav);
         NavigationUI.setupWithNavController(bottomNav,navController);
+
+//        NavigationBarView.OnItemReselectedListener naviListenter =item -> {
+//            case R.id.play:
+//                if ()
+//        }
     }
 
     @Override
@@ -87,4 +93,5 @@ public class QuizMenu extends AppCompatActivity {
         super.onPause();
         mainTheme.release();
     }
+
 }
