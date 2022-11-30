@@ -59,7 +59,7 @@ public class homeFragment extends Fragment {
                 R.drawable.history,
                 R.drawable.literature,
                 R.drawable.math,
-                R.drawable.scicien
+                R.drawable.science
         };
 
         for (int i = 0; i < newsHeading.length; i++) {
