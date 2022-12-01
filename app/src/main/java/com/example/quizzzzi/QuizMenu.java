@@ -2,6 +2,8 @@ package com.example.quizzzzi;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.fragment.NavHostFragment;
@@ -23,12 +25,14 @@ public class QuizMenu extends AppCompatActivity {
 
 //    ActivityMainBinding binding;
     MediaPlayer mainTheme;
+    
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 //        binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(R.layout.activity_quiz_menu);
+//        replaceFragment(new homeFragment());
 
         mainTheme = MediaPlayer.create(QuizMenu.this,R.raw.boom);
         // music loop
@@ -50,6 +54,22 @@ public class QuizMenu extends AppCompatActivity {
 //                if ()
 //        }
     }
+
+//    private void replaceFragment(Fragment fragment) {
+//        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+//        fragmentTransaction.setReorderingAllowed(true);
+//        fragmentTransaction.replace(R.id.content_frame, fragment, null);
+//        fragmentTransaction.commit();
+//        currentFrag = fragment;
+//    }
+
+//    private void replaceFragment(homeFragment homeFragment) {
+//        FragmentManager fragmentManager = getSupportFragmentManager();
+//        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+//        fragmentTransaction.replace(R.id.nav_host_fragment,homeFragment);
+//        fragmentTransaction.commit();
+//    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -83,10 +103,12 @@ public class QuizMenu extends AppCompatActivity {
                     Toast.makeText(QuizMenu.this, "DOWNLOAD E-MAIL APPS", Toast.LENGTH_SHORT).show();
                 }
                 return true;
+
         }
 
         return super.onOptionsItemSelected(item);
     }
+
 
     @Override
     protected void onPause() {
