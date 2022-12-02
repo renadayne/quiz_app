@@ -2,6 +2,7 @@ package com.example.quizzzzi;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.NavController;
@@ -10,11 +11,15 @@ import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.NavigationUI;
 
 import android.annotation.SuppressLint;
+import android.content.ClipData;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 //import com.example.quizzzzi.databinding.ActivityMainBinding;
@@ -25,8 +30,9 @@ public class QuizMenu extends AppCompatActivity {
 
 //    ActivityMainBinding binding;
     MediaPlayer mainTheme;
-    
-
+//    MenuItem play;
+    View play;
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +40,13 @@ public class QuizMenu extends AppCompatActivity {
         setContentView(R.layout.activity_quiz_menu);
 //        replaceFragment(new homeFragment());
 
+
+        play = findViewById(R.id.play);
+        play.setOnClickListener(view -> {
+            Fragment fragment = new homeFragment();
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.container, fragment).commit();
+        });
         mainTheme = MediaPlayer.create(QuizMenu.this,R.raw.boom);
         // music loop
         if (!mainTheme.isPlaying())
@@ -49,11 +62,16 @@ public class QuizMenu extends AppCompatActivity {
         BottomNavigationView bottomNav = findViewById(R.id.bottom_nav);
         NavigationUI.setupWithNavController(bottomNav,navController);
 
+
+
+
 //        NavigationBarView.OnItemReselectedListener naviListenter =item -> {
 //            case R.id.play:
 //                if ()
 //        }
     }
+
+
 
 //    private void replaceFragment(Fragment fragment) {
 //        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
@@ -74,6 +92,18 @@ public class QuizMenu extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.toolbar,menu);
+//        getMenuInflater().inflate(R.menu.menu, menu);
+//        final MenuInflater inflater = getMenuInflater();
+//        inflater.inflate(R.menu.menu, menu);
+//        play = menu.findItem(R.id.play);
+//        play.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+//            @Override
+//            public boolean onMenuItemClick(MenuItem menuItem) {
+//                Toast.makeText(QuizMenu.this, "hahah", Toast.LENGTH_SHORT).show();
+//
+//                return false;
+//            }
+//        });
         return super.onCreateOptionsMenu(menu);
     }
 
