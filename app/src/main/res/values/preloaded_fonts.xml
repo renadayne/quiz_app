@@ -2,5 +2,8 @@
 <resources>
     <array name="preloaded_fonts" translatable="false">
         <item>@font/alfa_slab_one</item>
+        <item>@font/anton</item>
+        <item>@font/be_vietnam_extrabold_italic</item>
+        <item>@font/contrail_one</item>
     </array>
 </resources>

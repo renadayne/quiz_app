@@ -57,7 +57,7 @@ public class homeFragment extends Fragment {
 
         imageResouceID = new int[]{
                 R.drawable.history,
-                R.drawable.literature,
+                R.drawable.literatue,
                 R.drawable.math,
                 R.drawable.science
         };
