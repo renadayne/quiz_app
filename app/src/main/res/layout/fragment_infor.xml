@@ -5,8 +5,8 @@
     android:id="@+id/inforFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="#C9FFCC"
-    tools:context=".inforFragment">
+    tools:context=".inforFragment"
+    android:background="@color/white">
 
     <!-- TODO: Update blank fragment layout -->
 

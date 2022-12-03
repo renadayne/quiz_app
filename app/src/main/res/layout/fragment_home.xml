@@ -5,7 +5,9 @@
     android:id="@+id/FrameLayout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".homeFragment" >
+    tools:context=".homeFragment"
+    android:background="@color/white">
+
 
     <TextView
         android:id="@+id/textView5"

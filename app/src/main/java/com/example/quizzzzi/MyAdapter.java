@@ -14,7 +14,7 @@ import com.google.android.material.imageview.ShapeableImageView;
 
 import java.util.ArrayList;
 
-public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
+public class    MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     Context context;
     ArrayList<topic> topicArrayList;
 

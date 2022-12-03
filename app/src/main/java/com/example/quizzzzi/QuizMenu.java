@@ -3,6 +3,7 @@ package com.example.quizzzzi;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentContainerView;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.NavController;
@@ -11,15 +12,13 @@ import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.NavigationUI;
 
 import android.annotation.SuppressLint;
-import android.content.ClipData;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.TextView;
+import android.widget.FrameLayout;
 import android.widget.Toast;
 
 //import com.example.quizzzzi.databinding.ActivityMainBinding;
@@ -30,8 +29,9 @@ public class QuizMenu extends AppCompatActivity {
 
 //    ActivityMainBinding binding;
     MediaPlayer mainTheme;
-//    MenuItem play;
-    View play;
+
+
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,13 +40,6 @@ public class QuizMenu extends AppCompatActivity {
         setContentView(R.layout.activity_quiz_menu);
 //        replaceFragment(new homeFragment());
 
-
-        play = findViewById(R.id.play);
-        play.setOnClickListener(view -> {
-            Fragment fragment = new homeFragment();
-            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-            fragmentTransaction.replace(R.id.container, fragment).commit();
-        });
         mainTheme = MediaPlayer.create(QuizMenu.this,R.raw.boom);
         // music loop
         if (!mainTheme.isPlaying())
@@ -56,6 +49,21 @@ public class QuizMenu extends AppCompatActivity {
         }
 
 
+        View play;
+        play =findViewById(R.id.play);
+//        FrameLayout fl = (FrameLayout) findViewById(R.id.FrameLayout);
+//        FragmentContainerView fv = (FragmentContainerView) findViewById(R.id.nav_host_fragment);
+        play.setOnClickListener(view -> {
+            rePlaceFragment(new homeFragment());
+        });
+
+//        View infor;
+//        infor = findViewById(R.id.toGameinformation);
+//        infor.setOnClickListener(view -> {
+//            Fragment fragment = new homeFragment();
+//            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+//            fragmentTransaction.replace(R.id.inforFragment,fragment).commit();
+//        });
         NavHostFragment navHostFragment =(NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment);
         assert navHostFragment != null;
         NavController navController = navHostFragment.getNavController();
@@ -63,47 +71,22 @@ public class QuizMenu extends AppCompatActivity {
         NavigationUI.setupWithNavController(bottomNav,navController);
 
 
+    }
 
-
-//        NavigationBarView.OnItemReselectedListener naviListenter =item -> {
-//            case R.id.play:
-//                if ()
-//        }
+    private void rePlaceFragment(Fragment fragment){
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction =fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.container,fragment);
+        fragmentTransaction.commit();
     }
 
 
 
-//    private void replaceFragment(Fragment fragment) {
-//        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-//        fragmentTransaction.setReorderingAllowed(true);
-//        fragmentTransaction.replace(R.id.content_frame, fragment, null);
-//        fragmentTransaction.commit();
-//        currentFrag = fragment;
-//    }
-
-//    private void replaceFragment(homeFragment homeFragment) {
-//        FragmentManager fragmentManager = getSupportFragmentManager();
-//        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-//        fragmentTransaction.replace(R.id.nav_host_fragment,homeFragment);
-//        fragmentTransaction.commit();
-//    }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.toolbar,menu);
-//        getMenuInflater().inflate(R.menu.menu, menu);
-//        final MenuInflater inflater = getMenuInflater();
-//        inflater.inflate(R.menu.menu, menu);
-//        play = menu.findItem(R.id.play);
-//        play.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
-//            @Override
-//            public boolean onMenuItemClick(MenuItem menuItem) {
-//                Toast.makeText(QuizMenu.this, "hahah", Toast.LENGTH_SHORT).show();
-//
-//                return false;
-//            }
-//        });
         return super.onCreateOptionsMenu(menu);
     }
 
@@ -115,7 +98,8 @@ public class QuizMenu extends AppCompatActivity {
         switch (item.getItemId()){
             case R.id.toGameinformation: //id item
                 //mo infor
-                Navcontroller.navigate(R.id.inforFragment);//id fragment
+                rePlaceFragment(new inforFragment());
+//                Navcontroller.navigate(R.id.inforFragment);//id fragment
                 return true;
 
             case R.id.toFeedback:
@@ -145,5 +129,6 @@ public class QuizMenu extends AppCompatActivity {
         super.onPause();
         mainTheme.release();
     }
+
 
 }
