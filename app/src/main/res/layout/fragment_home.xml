@@ -64,6 +64,7 @@
         android:id="@+id/recyclerview"
         android:layout_width="411dp"
         android:layout_height="452dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="-2dp"
