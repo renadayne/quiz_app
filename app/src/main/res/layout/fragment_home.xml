@@ -25,16 +25,16 @@
 
     <RelativeLayout
         android:id="@+id/relativeLayout"
-        android:layout_width="393dp"
-        android:layout_height="216dp"
+        android:layout_width="412dp"
+        android:layout_height="144dp"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="-14dp">
+        tools:layout_editor_absoluteX="-1dp">
 
         <ImageView
             android:id="@+id/board"
             android:layout_width="match_parent"
-            android:layout_height="128dp"
+            android:layout_height="138dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
@@ -45,14 +45,14 @@
 
         <TextView
             android:id="@+id/topic_text"
-            android:layout_width="156dp"
-            android:layout_height="73dp"
+            android:layout_width="wrap_content"
+            android:layout_height="87dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="130dp"
-            android:layout_marginEnd="107dp"
-            android:layout_marginBottom="13dp"
+            android:layout_marginStart="138dp"
+            android:layout_marginEnd="96dp"
+            android:layout_marginBottom="11dp"
             android:fontFamily="@font/bangers_regular"
             android:text="Chọn chủ đề"
             android:textSize="30sp" />

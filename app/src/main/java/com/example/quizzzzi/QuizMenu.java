@@ -50,20 +50,17 @@ public class QuizMenu extends AppCompatActivity {
 
 
         View play;
-        play =findViewById(R.id.play);
-//        FrameLayout fl = (FrameLayout) findViewById(R.id.FrameLayout);
-//        FragmentContainerView fv = (FragmentContainerView) findViewById(R.id.nav_host_fragment);
+        play = findViewById(R.id.play);
         play.setOnClickListener(view -> {
             rePlaceFragment(new homeFragment());
         });
 
-//        View infor;
-//        infor = findViewById(R.id.toGameinformation);
-//        infor.setOnClickListener(view -> {
-//            Fragment fragment = new homeFragment();
-//            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-//            fragmentTransaction.replace(R.id.inforFragment,fragment).commit();
-//        });
+        View history;
+        history = findViewById(R.id.history);
+        history.setOnClickListener(view -> {
+            rePlaceFragment(new levelFragment());
+        });
+
         NavHostFragment navHostFragment =(NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment);
         assert navHostFragment != null;
         NavController navController = navHostFragment.getNavController();

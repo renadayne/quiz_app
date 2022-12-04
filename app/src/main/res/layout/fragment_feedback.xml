@@ -8,11 +8,5 @@
     <!--    android:id="@+id/feedbackFragment">-->
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:id="@+id/feedbackFragmet"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="nhan tin" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
