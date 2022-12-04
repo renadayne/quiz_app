@@ -5,68 +5,68 @@
     android:id="@+id/FrameLayout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".homeFragment"
-    android:background="@color/white">
+    android:background="@color/white"
+    tools:context=".homeFragment">
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView5"-->
+    <!--        android:layout_width="403dp"-->
+    <!--        android:layout_height="95dp"-->
+    <!--        android:layout_marginTop="30dp"-->
+    <!--        android:fontFamily="@font/alfa_slab_one"-->
+    <!--        android:gravity="center_horizontal|center_vertical"-->
+    <!--        android:text="Chọn chủ đề"-->
+    <!--        android:textColor="#82ECF6"-->
+    <!--        android:textSize="48sp"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/recyclerview"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
 
     <RelativeLayout
-        android:layout_width="414dp"
-        android:layout_height="203dp"
-        tools:ignore="MissingConstraints">
+        android:id="@+id/relativeLayout"
+        android:layout_width="393dp"
+        android:layout_height="216dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="-14dp">
 
         <ImageView
             android:id="@+id/board"
-            android:layout_width="wrap_content"
-            android:layout_height="202dp"
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="18dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="-69dp"
-            android:src="@drawable/board" />
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:src="@drawable/whiteboard" />
 
         <TextView
             android:id="@+id/topic_text"
-            android:layout_width="153dp"
-            android:layout_height="52dp"
-            android:layout_alignStart="@+id/board"
-            android:layout_alignEnd="@+id/board"
-            android:layout_alignParentTop="true"
+            android:layout_width="156dp"
+            android:layout_height="73dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="111dp"
-            android:layout_marginTop="115dp"
-            android:layout_marginEnd="106dp"
-            android:layout_marginBottom="36dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginEnd="107dp"
+            android:layout_marginBottom="13dp"
             android:fontFamily="@font/bangers_regular"
             android:text="Chọn chủ đề"
-            android:textSize="34sp" />
+            android:textSize="30sp" />
 
 
     </RelativeLayout>
 
-<!--    <TextView-->
-<!--        android:id="@+id/textView5"-->
-<!--        android:layout_width="403dp"-->
-<!--        android:layout_height="95dp"-->
-<!--        android:layout_marginTop="30dp"-->
-<!--        android:fontFamily="@font/alfa_slab_one"-->
-<!--        android:gravity="center_horizontal|center_vertical"-->
-<!--        android:text="Chọn chủ đề"-->
-<!--        android:textColor="#82ECF6"-->
-<!--        android:textSize="48sp"-->
-<!--        app:layout_constraintBottom_toTopOf="@+id/recyclerview"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent" />-->
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview"
-        android:layout_width="413dp"
-        android:layout_height="466dp"
-        android:layout_marginTop="208dp"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="411dp"
+        android:layout_height="452dp"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteX="-2dp"
         tools:listitem="@layout/list_item" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

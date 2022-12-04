@@ -7,7 +7,7 @@
     android:layout_height="wrap_content"
     android:layout_margin="40dp"
     android:layout_marginHorizontal="8dp"
-    android:layout_marginLeft="20dp"
+    android:layout_marginLeft="40dp"
     android:background="#D1F8D3"
     android:foreground="?android:attr/selectableItemBackground"
     android:paddingTop="8dp"
@@ -16,7 +16,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        >
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/title_image"
@@ -36,6 +37,7 @@
             android:id="@+id/tvHeading"
             android:layout_width="147dp"
             android:layout_height="41dp"
+            android:layout_marginEnd="4dp"
             android:fontFamily="sans-serif-condensed"
             android:text="Lịch Sử"
             android:textColor="@color/black"
@@ -43,7 +45,7 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteY="12dp" />
+            tools:layout_editor_absoluteY="20dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
