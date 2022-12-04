@@ -5,19 +5,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="40dp"
+    android:layout_margin="30dp"
     android:layout_marginHorizontal="8dp"
     android:layout_marginLeft="40dp"
     android:background="#D1F8D3"
+    android:elevation="15dp"
     android:foreground="?android:attr/selectableItemBackground"
     android:paddingTop="8dp"
-    app:cardCornerRadius="15dp"
-    android:elevation="15dp">
+    app:cardCornerRadius="15dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
+        android:layout_height="match_parent">
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/title_image"
@@ -48,7 +47,6 @@
             tools:layout_editor_absoluteY="20dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 
 
 </androidx.cardview.widget.CardView>
