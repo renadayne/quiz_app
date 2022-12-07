@@ -8,6 +8,10 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.navigation.fragment.NavHostFragment;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.imageview.ShapeableImageView;
@@ -33,10 +37,30 @@ public class    MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
+        topic item = topicArrayList.get(position);
+        holder.tvHeading.setText(item.getHeading());
+        holder.titleImage.setImageResource(item.getTitleImange());
 
-        topic topic = topicArrayList.get(position);
-        holder.tvHeading.setText(topic.heading);
-        holder.titleImage.setImageResource(topic.titleImange);
+        holder.itemView.setOnClickListener(view -> {
+            // save lai topic
+            if(holder.getAdapterPosition()==0){
+                save.setTopic("Lịch sử");
+                save.setImage(R.drawable.history);
+            }else if(holder.getAdapterPosition()==1){
+                save.setTopic("Văn học");
+                save.setImage(R.drawable.literatue);
+            }else if(holder.getAdapterPosition()==2){
+                save.setTopic("Khoa học");
+                save.setImage(R.drawable.science);
+            }else if(holder.getAdapterPosition()==3){
+                save.setTopic("Toán học");
+                save.setImage(R.drawable.math);}
+
+            AppCompatActivity activity =(AppCompatActivity)view.getContext();
+            levelFragment levelFragment = new levelFragment();
+            activity.getSupportFragmentManager().beginTransaction().replace(R.id.container,levelFragment).addToBackStack(null).commit();
+
+        });
     }
 
     @Override
@@ -56,6 +80,8 @@ public class    MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
             tvHeading = itemView.findViewById(R.id.tvHeading);
 
         }
+
+
     }
 }
 

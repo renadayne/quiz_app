@@ -46,18 +46,13 @@
         tools:ignore="MissingConstraints">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="343dp"
-            android:layout_height="42dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="15dp"
-            android:layout_marginBottom="10dp">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
             <TextView
                 android:id="@+id/textView10"
                 android:layout_width="84dp"
                 android:layout_height="34dp"
-                android:layout_marginStart="56dp"
                 android:layout_marginEnd="148dp"
                 android:fontFamily="@font/anton"
                 android:gravity="center|center_vertical"
@@ -67,17 +62,19 @@
                 app:layout_constraintEnd_toStartOf="@+id/imageView3"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.636"
                 tools:ignore="MissingConstraints" />
 
             <ImageView
                 android:id="@+id/imageView3"
                 android:layout_width="32dp"
                 android:layout_height="28dp"
-                android:layout_marginEnd="52dp"
+                android:layout_marginEnd="68dp"
                 android:src="@drawable/star"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.571" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -159,8 +156,10 @@
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/imageView5"
+                app:layout_constraintHorizontal_bias="0.69"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.333" />
 
             <ImageView
                 android:id="@+id/imageView8"

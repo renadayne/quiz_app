@@ -58,7 +58,7 @@ public class QuizMenu extends AppCompatActivity {
         View history;
         history = findViewById(R.id.history);
         history.setOnClickListener(view -> {
-            rePlaceFragment(new questionFragment());
+            rePlaceFragment(new levelFragment());
         });
 
         NavHostFragment navHostFragment =(NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment);
