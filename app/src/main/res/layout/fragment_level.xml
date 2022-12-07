@@ -34,7 +34,7 @@
         tools:ignore="MissingConstraints" />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView"
+        android:id="@+id/easy"
         android:layout_width="374dp"
         android:layout_height="56dp"
         android:layout_margin="10dp"
@@ -43,7 +43,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        tools:ignore="MissingConstraints">
+        tools:ignore="MissingConstraints"
+        android:onClick="selectLevel">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -82,7 +83,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView2"
+        android:id="@+id/medium"
         android:layout_width="374dp"
         android:layout_height="56dp"
         android:layout_marginTop="40dp"
@@ -90,8 +91,9 @@
         app:cardElevation="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView"
-        tools:ignore="MissingConstraints">
+        app:layout_constraintTop_toBottomOf="@+id/easy"
+        tools:ignore="MissingConstraints"
+        android:onClick="selectLevel">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -133,6 +135,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/hard"
         android:layout_width="374dp"
         android:layout_height="56dp"
         android:layout_marginTop="40dp"
@@ -140,8 +143,9 @@
         app:cardElevation="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView2"
-        tools:ignore="MissingConstraints">
+        app:layout_constraintTop_toBottomOf="@+id/medium"
+        tools:ignore="MissingConstraints"
+        android:onClick="selectLevel">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"

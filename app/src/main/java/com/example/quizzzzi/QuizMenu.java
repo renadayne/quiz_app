@@ -25,6 +25,8 @@ import android.widget.Toast;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
+import java.security.PublicKey;
+
 public class QuizMenu extends AppCompatActivity {
 
 //    ActivityMainBinding binding;
@@ -125,6 +127,22 @@ public class QuizMenu extends AppCompatActivity {
     protected void onPause() {
         super.onPause();
         mainTheme.release();
+    }
+
+    public void selectLevel(View view){
+        if(view.getId()==R.id.easy){
+            save.setLevel("easy");
+            //chuyen sang frament qusstion
+            Toast.makeText(this, save.getTopic()+" "+save.getLevel(), Toast.LENGTH_SHORT).show();
+        }
+        if(view.getId()==R.id.medium){
+            save.setLevel("medium");
+            Toast.makeText(this, save.getTopic()+" "+save.getLevel(), Toast.LENGTH_SHORT).show();
+        }
+        if(view.getId()==R.id.hard){
+            save.setLevel("hard");
+            Toast.makeText(this, save.getTopic()+" "+save.getLevel(), Toast.LENGTH_SHORT).show();
+        }
     }
 
 

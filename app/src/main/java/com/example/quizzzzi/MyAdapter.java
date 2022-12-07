@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -59,7 +60,7 @@ public class    MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
             AppCompatActivity activity =(AppCompatActivity)view.getContext();
             levelFragment levelFragment = new levelFragment();
             activity.getSupportFragmentManager().beginTransaction().replace(R.id.container,levelFragment).addToBackStack(null).commit();
-
+            Toast.makeText(view.getContext(), save.getTopic(), Toast.LENGTH_SHORT).show();
         });
     }
 
