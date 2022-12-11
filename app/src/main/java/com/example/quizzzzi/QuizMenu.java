@@ -60,6 +60,7 @@ public class QuizMenu extends AppCompatActivity {
         play = findViewById(R.id.play);
         play.setOnClickListener(view -> {
             rePlaceFragment(new homeFragment());
+
         });
 
         View history;

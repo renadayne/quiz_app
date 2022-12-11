@@ -10,8 +10,10 @@
     app:cardCornerRadius="4dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="396dp"
-        android:layout_height="match_parent">
+        android:layout_width="406dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
 
         <TextView
             android:id="@+id/result_his"

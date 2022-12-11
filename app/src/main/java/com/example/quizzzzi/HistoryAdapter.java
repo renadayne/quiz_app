@@ -35,8 +35,8 @@ public class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.HistoryV
 
 
         holder.result.setText(item.correctCount + "/5");
-        holder.category.setText(item.topic);
-        holder.level.setText(item.level);
+        holder.category.setText(save.getTopic());
+        holder.level.setText(save.getLevel());
         holder.date.setText(item.initTime());
 
     }
