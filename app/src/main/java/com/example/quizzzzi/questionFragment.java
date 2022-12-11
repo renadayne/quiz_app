@@ -59,8 +59,8 @@ public class questionFragment extends Fragment {
                     DisplayQuestion(currentQuestionCount);
                 }else{
                     //go to result Fragment
-//                    ResultFragment resultFragment = new ResultFragment();
-//                    getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout, resultFragment).addToBackStack(null).commit();
+                    ResultFragment resultFragment = new ResultFragment();
+                    getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container, resultFragment).addToBackStack(null).commit();
                 }
             }
         });
@@ -79,8 +79,8 @@ public class questionFragment extends Fragment {
                     DisplayQuestion(currentQuestionCount);
                 }else{
                     //go to result Fragment
-//                    ResultFragment resultFragment = new ResultFragment();
-//                    getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout, resultFragment).addToBackStack(null).commit();
+                    ResultFragment resultFragment = new ResultFragment();
+                    getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container, resultFragment).addToBackStack(null).commit();
                 }
             }
         });
@@ -140,6 +140,24 @@ public class questionFragment extends Fragment {
     private void DisplayQuestion(int number)
     {
         binding.tvQuestion.setText(questionItems.get(number).getQuestionText());
+        updateQuesQuantity();
+    }
+
+    int temp = 0;
+    private void updateQuesQuantity(){
+        int progress = binding.quesProgess.getProgress();
+        if (temp == 0)
+        {
+            progress = 0;
+            temp +=1;
+        }
+        else if (progress >= binding.quesProgess.getMax())
+        {
+            temp = 0;
+        }
+        else {
+            binding.quesProgess.setProgress(progress + 20);
+        }
     }
 
 }
