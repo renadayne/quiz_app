@@ -77,7 +77,7 @@
         android:layout_width="182dp"
         android:layout_height="57dp"
 
-
+        android:drawableLeft="@drawable/ic_baseline_done_outline_24"
         android:onClick="goHome"
         android:paddingEnd="10dp"
         android:text="Hoàn thành"
