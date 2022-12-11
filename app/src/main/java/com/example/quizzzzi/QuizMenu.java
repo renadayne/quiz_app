@@ -145,18 +145,18 @@ public class QuizMenu extends AppCompatActivity {
         if(view.getId()==R.id.easy){
             save.setLevel("easy");
             //chuyen sang frament qusstion
-            Toast.makeText(this, save.getTopic()+" "+save.getLevel(), Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this, save.getTopic()+" "+save.getLevel(), Toast.LENGTH_SHORT).show();
             getSupportFragmentManager().beginTransaction().replace(R.id.container, new questionFragment(), "fragment")
                     .addToBackStack(null).commit();
         }
         if(view.getId()==R.id.medium){
             save.setLevel("medium");
-            Toast.makeText(this, save.getTopic()+" "+save.getLevel(), Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this, save.getTopic()+" "+save.getLevel(), Toast.LENGTH_SHORT).show();
             rePlaceFragment(new questionFragment());
         }
         if(view.getId()==R.id.hard){
             save.setLevel("hard");
-            Toast.makeText(this, save.getTopic()+" "+save.getLevel(), Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this, save.getTopic()+" "+save.getLevel(), Toast.LENGTH_SHORT).show();
             rePlaceFragment(new questionFragment());
         }
     }
@@ -164,14 +164,42 @@ public class QuizMenu extends AppCompatActivity {
     public void selectAnswer(View view) {
         if(view.getId() == R.id.answer1) {
             save.setAnswer("Answer 1");
-            Toast.makeText(this, save.getTopic()+" "+save.getLevel() + " " +save.getAnswer(), Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this, save.getTopic()+" "+save.getLevel() + " " +save.getAnswer(), Toast.LENGTH_SHORT).show();
         }
         if(view.getId() == R.id.answer2) {
             save.setAnswer("Answer 2");
-            Toast.makeText(this, save.getTopic()+" "+save.getLevel() + " " +save.getAnswer(), Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this, save.getTopic()+" "+save.getLevel() + " " +save.getAnswer(), Toast.LENGTH_SHORT).show();
 
         }
 
+    }
+
+    //tro ve home
+    public void goHome(View view){
+        if(view.getId() == R.id.go_home){
+            homeFragment goHomeFragment = new homeFragment();
+            rePlaceFragment(goHomeFragment);
+        }
+        //reset so cau tra loi dung ve 0
+        HistoryFragment.AddHistoryList();
+
+        //history result
+        HistoryFragment.getCorrectCount();
+        HistoryFragment.resetCorrectCount();
+
+    }
+
+    //chia se thanh tich
+    public void shareResult(View view) {
+        if(view.getId() == R.id.share_result){
+            Intent shareIntent = new Intent(Intent.ACTION_SEND);
+            shareIntent.setType("text/plain");
+            String result = "Tôi đã trả lời đúng " + (HistoryFragment.getCorrectCount() + "/5") + " câu hỏi " + "cấp độ " + save.getLevel() + " ở chủ đề " + save.getTopic();
+            Toast.makeText(this, result, Toast.LENGTH_SHORT).show();
+            shareIntent.putExtra(Intent.EXTRA_TEXT, result);
+            startActivity(Intent.createChooser(shareIntent, null));
+
+        }
     }
 
 }
