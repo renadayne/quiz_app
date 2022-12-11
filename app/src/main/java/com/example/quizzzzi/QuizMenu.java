@@ -1,6 +1,7 @@
 package com.example.quizzzzi;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentContainerView;
@@ -12,9 +13,11 @@ import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.NavigationUI;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.util.AttributeSet;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -42,6 +45,8 @@ public class QuizMenu extends AppCompatActivity {
         setContentView(R.layout.activity_quiz_menu);
 //        replaceFragment(new homeFragment());
 
+
+
         mainTheme = MediaPlayer.create(QuizMenu.this,R.raw.boom);
         // music loop
         if (!mainTheme.isPlaying())
@@ -63,6 +68,8 @@ public class QuizMenu extends AppCompatActivity {
             rePlaceFragment(new levelFragment());
         });
 
+
+
         NavHostFragment navHostFragment =(NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment);
         assert navHostFragment != null;
         NavController navController = navHostFragment.getNavController();
@@ -71,6 +78,7 @@ public class QuizMenu extends AppCompatActivity {
 
 
     }
+
 
     private void rePlaceFragment(Fragment fragment){
         FragmentManager fragmentManager = getSupportFragmentManager();
@@ -123,27 +131,47 @@ public class QuizMenu extends AppCompatActivity {
     }
 
 
+
+
     @Override
     protected void onPause() {
         super.onPause();
         mainTheme.release();
     }
 
+
+
     public void selectLevel(View view){
         if(view.getId()==R.id.easy){
             save.setLevel("easy");
             //chuyen sang frament qusstion
             Toast.makeText(this, save.getTopic()+" "+save.getLevel(), Toast.LENGTH_SHORT).show();
+            getSupportFragmentManager().beginTransaction().replace(R.id.container, new questionFragment(), "fragment")
+                    .addToBackStack(null).commit();
         }
         if(view.getId()==R.id.medium){
             save.setLevel("medium");
             Toast.makeText(this, save.getTopic()+" "+save.getLevel(), Toast.LENGTH_SHORT).show();
+            rePlaceFragment(new questionFragment());
         }
         if(view.getId()==R.id.hard){
             save.setLevel("hard");
             Toast.makeText(this, save.getTopic()+" "+save.getLevel(), Toast.LENGTH_SHORT).show();
+            rePlaceFragment(new questionFragment());
         }
     }
 
+    public void selectAnswer(View view) {
+        if(view.getId() == R.id.answer1) {
+            save.setAnswer("Answer 1");
+            Toast.makeText(this, save.getTopic()+" "+save.getLevel() + " " +save.getAnswer(), Toast.LENGTH_SHORT).show();
+        }
+        if(view.getId() == R.id.answer2) {
+            save.setAnswer("Answer 2");
+            Toast.makeText(this, save.getTopic()+" "+save.getLevel() + " " +save.getAnswer(), Toast.LENGTH_SHORT).show();
+
+        }
+
+    }
 
 }

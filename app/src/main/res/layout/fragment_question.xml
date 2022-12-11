@@ -25,24 +25,24 @@
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/tvQuestion"
             android:layout_width="94dp"
             android:layout_height="40dp"
             android:layout_alignEnd="@+id/imageView2"
             android:layout_alignBottom="@+id/imageView2"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="161dp"
-            android:layout_marginTop="114dp"
-            android:layout_marginEnd="158dp"
-            android:layout_marginBottom="98dp"
+            android:layout_marginStart="95dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="95dp"
+            android:layout_marginBottom="50dp"
             android:gravity="center"
             android:text="Câu hỏi" />
 
     </RelativeLayout>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView4"
+        android:id="@+id/answer1"
         android:layout_width="374dp"
         android:layout_height="80dp"
         android:layout_marginTop="10dp"
@@ -51,16 +51,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout2"
-        tools:ignore="MissingConstraints">
+        tools:ignore="MissingConstraints"
+        android:onClick="selectAnswer">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <TextView
+                android:id="@+id/firstChoice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Đáp án 1"
+                android:text="Đúng"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -69,7 +71,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView5"
+        android:id="@+id/answer2"
         android:layout_width="374dp"
         android:layout_height="80dp"
         android:layout_marginTop="20dp"
@@ -77,17 +79,19 @@
         app:cardElevation="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView4"
-        tools:ignore="MissingConstraints">
+        app:layout_constraintTop_toBottomOf="@+id/answer1"
+        tools:ignore="MissingConstraints"
+        android:onClick="selectAnswer">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <TextView
+                android:id="@+id/secondChoice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Đáp án 2"
+                android:text="Sai"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -95,30 +99,6 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="374dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="20dp"
-        app:cardCornerRadius="10dp"
-        app:cardElevation="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView5"
-        tools:ignore="MissingConstraints">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Đáp án 3"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

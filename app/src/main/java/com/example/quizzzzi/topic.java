@@ -1,9 +1,10 @@
 package com.example.quizzzzi;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class topic {
+public class topic implements Serializable {
     String heading;
     int titleImange;
     public topic(String heading, int titleImange) {

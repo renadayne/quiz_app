@@ -6,6 +6,7 @@ import android.view.View;
 public class save {
     public String level ="";
     public String topic ="";
+    public String answer = "";
     public int image = 0;
     public save(){
     }
@@ -20,12 +21,19 @@ public class save {
     public static void setTopic(String _topic){
         current.topic =_topic;
     }
+    public static void setAnswer(String _answer){
+        current.answer = _answer;
+    }
     public static String getLevel(){
         return current.level;
     }
     public static String getTopic(){
         return current.topic;
     }
+    public static String getAnswer(){
+        return  current.answer;
+    }
+
 
     public static int getImage(){
         return current.image;

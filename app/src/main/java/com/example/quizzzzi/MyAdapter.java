@@ -10,9 +10,6 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
-import androidx.navigation.fragment.NavHostFragment;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.imageview.ShapeableImageView;
@@ -45,16 +42,16 @@ public class    MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         holder.itemView.setOnClickListener(view -> {
             // save lai topic
             if(holder.getAdapterPosition()==0){
-                save.setTopic("Lịch sử");
+                save.setTopic("history");
                 save.setImage(R.drawable.history);
             }else if(holder.getAdapterPosition()==1){
-                save.setTopic("Văn học");
+                save.setTopic("literature");
                 save.setImage(R.drawable.literatue);
             }else if(holder.getAdapterPosition()==2){
-                save.setTopic("Khoa học");
+                save.setTopic("science");
                 save.setImage(R.drawable.science);
             }else if(holder.getAdapterPosition()==3){
-                save.setTopic("Toán học");
+                save.setTopic("math");
                 save.setImage(R.drawable.math);}
 
             AppCompatActivity activity =(AppCompatActivity)view.getContext();
