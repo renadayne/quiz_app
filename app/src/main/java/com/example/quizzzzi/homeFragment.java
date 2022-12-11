@@ -21,10 +21,10 @@ import java.util.ArrayList;
 public class homeFragment extends Fragment {
     FragmentHomeBinding binding;
 
-    private ArrayList<topic> topicArraylist;
-    private String[] newsHeading;
-    private int[] imageResouceID;
-    private RecyclerView recyclerview;
+//    private ArrayList<topic> topicArraylist;
+//    private String[] newsHeading;
+//    private int[] imageResouceID;
+//    private RecyclerView recyclerview;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

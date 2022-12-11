@@ -10,7 +10,7 @@
     app:cardCornerRadius="4dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="391dp"
+        android:layout_width="396dp"
         android:layout_height="match_parent">
 
         <TextView
@@ -33,7 +33,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.363" />
+            app:layout_constraintVertical_bias="0.375" />
 
         <TextView
             android:id="@+id/level_his"

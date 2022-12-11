@@ -65,7 +65,7 @@ public class QuizMenu extends AppCompatActivity {
         View history;
         history = findViewById(R.id.history);
         history.setOnClickListener(view -> {
-            rePlaceFragment(new levelFragment());
+            rePlaceFragment(new HistoryFragment());
         });
 
 
