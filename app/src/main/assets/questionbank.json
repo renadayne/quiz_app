@@ -2,6 +2,202 @@
    "math":{
       "easy":[
          {
+            "question":"Phép cộng có tính chất hoán vị?",
+            "answer1":"Dung",
+            "answer2":"Sai",
+            "correct":"Dung"
+         },
+         {
+            "question":"Số 0 chia cho mọi số đều bằng 0?",
+            "answer1":"Dung",
+            "answer2":"Sai",
+            "correct":"Sai"
+         },
+         {
+            "question":"Tập hợp các số tự nhiên ký hiệu là N?",
+            "answer1":"Dung",
+            "answer2":"Sai",
+            "correct":"Dung"
+         },
+         {
+            "question":"Số -12 được gọi là số nguyên dương?",
+            "answer1":"Dung",
+            "answer2":"Sai",
+            "correct":"Sai"
+         },
+         {
+            "question":"Tam giác có tổng 3 góc là 180 độ?",
+            "answer1":"Dung",
+            "answer2":"Sai",
+            "correct":"Dung"
+         }
+      ],
+      "medium":[
+         {
+            "question":"Thứ tự thực hiện phép tính là: Nhân chia sau cộng trừ trước?",
+            "answer1":"Dung",
+            "answer2":"Sai",
+            "correct":"Sai"
+         },
+         {
+            "question":"Phép toán 2 lập phương có kết quả là 8?",
+            "answer1":"Dung",
+            "answer2":"Sai",
+            "correct":"Dung"
+         },
+         {
+            "question":"Số 28 là số chia hết cho 2?",
+            "answer1":"Dung",
+            "answer2":"Sai",
+            "correct":"Dung"
+         },
+         {
+            "question":"Hình lập phương có thể tích là Cạnh x cạnh?",
+            "answer1":"Dung",
+            "answer2":"Sai",
+            "correct":"Sai"
+         },
+         {
+            "question":"Định lý pytago áp dụng cho tam giác tù?",
+            "answer1":"Dung",
+            "answer2":"Sai",
+            "correct":"Sai"
+         }
+      ],
+      "hard":[
+         {
+            "question":"Số 2+3i là một số phức?",
+            "answer1":"Dung",
+            "answer2":"Sai",
+            "correct":"Dung"
+         },
+         {
+            "question":"Số 12 là ước của 12?",
+            "answer1":"Dung",
+            "answer2":"Sai",
+            "correct":"Sai"
+         },
+         {
+            "question":"Hai góc bù nhau có tổng bằng 90 độ?",
+            "answer1":"Dung",
+            "answer2":"Sai",
+            "correct":"Sai"
+         },
+         {
+            "question":"Mọi số đều chia hết cho 1?",
+            "answer1":"Dung",
+            "answer2":"Sai",
+            "correct":"Dung"
+         },
+         {
+            "question":"Định lý Menden là một định lý toán học?",
+            "answer1":"Dung",
+            "answer2":"Sai",
+            "correct":"Sai"
+         }
+      ]
+   },
+   "history":{
+      "easy":[
+         {
+            "question":"Cách mạng tháng 8 thành công năm 1945?",
+            "answer1":"Dung",
+            "answer2":"Sai",
+            "correct":"Dung"
+         },
+         {
+            "question":"Có 18 đời vua Hùng?",
+            "answer1":"Dung",
+            "answer2":"Sai",
+            "correct":"Dung"
+         },
+         {
+            "question":"Đại việt là tên đầu tiên của nước ta?",
+            "answer1":"Dung",
+            "answer2":"Sai",
+            "correct":"Sai"
+         },
+         {
+            "question":"Quốc khánh là ngày 2/9?",
+            "answer1":"Dung",
+            "answer2":"Sai",
+            "correct":"Dung"
+         },
+         {
+            "question":"Không quân mỹ sử dụng máy bay Su30 trong chiến dịch Điện Biên Phủ trên không vs nước ta?”",
+            "answer1":"Dung",
+            "answer2":"Sai",
+            "correct":"Sai"
+         }
+      ],
+      "medium":[
+         {
+            "question":"Triều Nguyễn là triều đại phong kiến cuối cùng của nước ta?",
+            "answer1":"Dung",
+            "answer2":"Sai",
+            "correct":"Dung"
+         },
+         {
+            "question":"Sau khi lên ngôi vua Lý Thái Tổ rời đô về Ninh Bình?",
+            "answer1":"Dung",
+            "answer2":"Sai",
+            "correct":"Sai"
+         },
+         {
+            "question":"Ngô Quyền đại phá quân Thanh trên sông Bạch Đằng năm 938?",
+            "answer1":"Dung",
+            "answer2":"Sai",
+            "correct":"Dung"
+         },
+         {
+            "question":"Hai Bà Trưng khởi nghĩa mùa xuân năm 50?",
+            "answer1":"Dung",
+            "answer2":"Sai",
+            "correct":"Sai"
+         },
+         {
+            "question":"Hà Tây được sáp nhập vào Hà Nội năm 2008?",
+            "answer1":"Dung",
+            "answer2":"Sai",
+            "correct":"Dung"
+         }
+      ],
+      "hard":[
+         {
+            "question":"Bác Hồ ra đi tìm đường cứu nước năm 1911?",
+            "answer1":"Dung",
+            "answer2":"Sai",
+            "correct":"Dung"
+         },
+         {
+            "question":"Tên khai sinh của Bác Hồ là Nguyễn Sinh Cung?",
+            "answer1":"Dung",
+            "answer2":"Sai",
+            "correct":"Dung"
+         },
+         {
+            "question":"Thành nhà Hồ ở Nghệ An?",
+            "answer1":"Dung",
+            "answer2":"Sai",
+            "correct":"Sai"
+         },
+         {
+            "question":"Việt Nam từng có tên là Đại Ngu?",
+            "answer1":"Dung",
+            "answer2":"Sai",
+            "correct":"Dung"
+         },
+         {
+            "question":"Việt Nam từng có thời kỳ 1000 năm Bắc thuộc?",
+            "answer1":"Dung",
+            "answer2":"Sai",
+            "correct":"Dung"
+         }
+      ]
+   },
+   "literature":{
+      "easy":[
+         {
             "question":"Pytago là nhà toán học người Hy Lạp ? ",
             "answer1":"Dung",
             "answer2":"Sai",
@@ -91,104 +287,6 @@
          },
          {
             "question":"Georg Cantor là nhà toán học người Nga sáng tạo ra số cardinal ?",
-            "answer1":"Dung",
-            "answer2":"Sai",
-            "correct":"Dung"
-         }
-      ]
-   },
-   "history":{
-      "easy":[
-         {
-            "question":"Cách mạng tháng 8 thành công năm 1945?",
-            "answer1":"Dung",
-            "answer2":"Sai",
-            "correct":"Dung"
-         },
-         {
-            "question":"Có 18 đời vua Hùng?",
-            "answer1":"Dung",
-            "answer2":"Sai",
-            "correct":"Dung"
-         },
-         {
-            "question":"“Catch me if you can” là bộ phim duy nhất có sự hợp tác giữa Dicaprio và Tom hanks?",
-            "answer1":"Dung",
-            "answer2":"Sai",
-            "correct":"Dung"
-         },
-         {
-            "question":"Leonardo DiCaprio đã đạt 3 giải Oscar nam diễn viên xuất sắc nhất cho đến năm 2022 ?",
-            "answer1":"Dung",
-            "answer2":"Sai",
-            "correct":"Dung"
-         },
-         {
-            "question":"Christopher Nolan là đạo diên của phim “Instertella”",
-            "answer1":"Dung",
-            "answer2":"Sai",
-            "correct":"Dung"
-         }
-      ],
-      "medium":[
-         {
-            "question":"Giải thưởng Viện Hàn lâm (Oscar) lần đầu tiên được trao vào năm 1928 ?",
-            "answer1":"Dung",
-            "answer2":"Sai",
-            "correct":"Dung"
-         },
-         {
-            "question":"Bộ phim titanic đã giành được 13 giải Oscar ?",
-            "answer1":"Dung",
-            "answer2":"Sai",
-            "correct":"Sai"
-         },
-         {
-            "question":"“Cha đẻ” của chuột Mickey đã đoạt tổng cộng 22 giải Oscar trong suốt sự nghiệp của mình ?",
-            "answer1":"Dung",
-            "answer2":"Sai",
-            "correct":"Dung"
-         },
-         {
-            "question":"“Forrest Gump” lần đầu ra mắt khán giả vào năm 1995 ? ",
-            "answer1":"Dung",
-            "answer2":"Sai",
-            "correct":"Dung"
-         },
-         {
-            "question":"Bộ phim “Shawshank Redemption” là bộ phim đạt điểm Imdb cao nhất mọi thơi đại ?",
-            "answer1":"Dung",
-            "answer2":"Sai",
-            "correct":"Dung"
-         }
-      ],
-      "hard":[
-         {
-            "question":"Kathryn Bigelow  là người phụ nữ đầu tiên nhận giải Oscar danh cho “ Đạo diễn xuất sắc nhất”",
-            "answer1":"Dung",
-            "answer2":"Sai",
-            "correct":"Dung"
-         },
-         {
-            "question":"Giải Oscar cho nữ diễn viên chính xuất sắc nhất lần đầu được trao vào năm 1926 ?",
-            "answer1":"Dung",
-            "answer2":"Sai",
-            "correct":"Sai"
-         },
-         {
-            "question":"HelpBurn giành nhiều chiến thắng nhất ở hạng mục “ Nữ diễn viên chính xuất sắc” tại Oscar ?",
-            "answer1":"Dung",
-            "answer2":"Sai",
-            "correct":"Dung"
-         },
-         {
-            "question":"Bộ phim “La La Land” là bộ phim về thể loại nhạc kịch ? ",
-            "answer1":"Dung",
-            "answer2":"Sai",
-            "correct":"Dung"
-         },
-         {
-            "question":"Emma Stone đã nhận giải Oscar qua bộ phim “La La Land” ?",
             "answer1":"Dung",
             "answer2":"Sai",
             "correct":"Dung"

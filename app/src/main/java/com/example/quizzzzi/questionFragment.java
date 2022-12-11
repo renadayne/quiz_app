@@ -7,8 +7,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
-import android.widget.Toast;
+
 
 import com.example.quizzzzi.databinding.FragmentQuestionBinding;
 
@@ -45,23 +44,20 @@ public class questionFragment extends Fragment {
         // nhan cau hoi dau tien
         DisplayQuestion(currentQuestionCount);
         // Chuyen den cau hoi tiep theo
-        binding.answer1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                // kiem tra dap an dung
-                if(questionItems.get(currentQuestionCount).getAnswer1().equals(questionItems.get(currentQuestionCount).getQuestioAnswer()))
-                {
-                    HistoryFragment.increaseCorrectCount();
-                }
-                //load next question neu co
-                if(currentQuestionCount < 4){  // 4: chi chon 5 cau hoi
-                    currentQuestionCount++;
-                    DisplayQuestion(currentQuestionCount);
-                }else{
-                    //go to result Fragment
-                    ResultFragment resultFragment = new ResultFragment();
-                    getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container, resultFragment).addToBackStack(null).commit();
-                }
+        binding.answer1.setOnClickListener(view -> {
+            // kiem tra dap an dung
+            if(questionItems.get(currentQuestionCount).getAnswer1().equals(questionItems.get(currentQuestionCount).getQuestioAnswer()))
+            {
+                HistoryFragment.increaseCorrectCount();
+            }
+            //load next question neu co
+            if(currentQuestionCount < 4){  // 4: chi chon 5 cau hoi
+                currentQuestionCount++;
+                DisplayQuestion(currentQuestionCount);
+            }else{
+                //go to result Fragment
+                ResultFragment resultFragment = new ResultFragment();
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container, resultFragment).addToBackStack(null).commit();
             }
         });
 
@@ -148,7 +144,7 @@ public class questionFragment extends Fragment {
         int progress = binding.quesProgess.getProgress();
         if (temp == 0)
         {
-            progress = 0;
+//            progress = 0;
             temp +=1;
         }
         else if (progress >= binding.quesProgess.getMax())
