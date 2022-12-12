@@ -198,63 +198,63 @@
    "literature":{
       "easy":[
          {
-            "question":"Pytago là nhà toán học người Hy Lạp ? ",
+            "question":"Văn học Việt Nam do văn học dân gian và văn học viết hợp thành?",
             "answer1":"Dung",
             "answer2":"Sai",
             "correct":"Dung"
          },
          {
-            "question":"Tổng 3 góc của 1 tam giác luôn bằng 180 độ ?",
+            "question":"Truyện ngắn Chiếc thuyền ngoài xa của tác giả Nguyễn Minh Châu?",
             "answer1":"Dung",
             "answer2":"Sai",
             "correct":"Dung"
          },
          {
-            "question":"Hình thang là hình có 2 đường chéo song song nhau ?",
-            "answer1":"Dung",
-            "answer2":"Sai",
-            "correct":"Dung"
-         },
-         {
-            "question":"Logarit cơ số -1 bằng 0 ?",
-            "answer1":"Dung",
-            "answer2":"Sai",
-            "correct":"Dung"
-         },
-         {
-            "question":"Làm tròn 3.197654 đến chữ số thập phân thứ 3 là 3.197 ?",
+            "question":"Nhân vật Mị là nhân vật thuộc tác phẩm Người lái đò sông Đà?",
             "answer1":"Dung",
             "answer2":"Sai",
             "correct":"Sai"
+         },
+         {
+            "question":"Phép nhân hoá là làm nổi bật lên các khía cạnh nào đó của sự vật hay sự việc cụ thể trong từng hoàn cảnh khác nhau??",
+            "answer1":"Dung",
+            "answer2":"Sai",
+            "correct":"Sai"
+         },
+         {
+            "question":"phép so sánh là làm nổi bật lên các khía cạnh nào đó của sự vật hay sự việc cụ thể trong từng hoàn cảnh khác nhau?",
+            "answer1":"Dung",
+            "answer2":"Sai",
+            "correct":"Dung"
          }
       ],
       "medium":[
          {
-            "question":"Tìm y, biết y * 5 = 45. Vậy y = 8",
+            "question":"Truyện ngắn “ Truyện Kiều” của tác giả Nguyễn Du?",
             "answer1":"Dung",
             "answer2":"Sai",
             "correct":"Dung"
          },
          {
-            "question":"Có 40 học sinh, 1/5 số học sinh này là: 7",
+            "question":"Tác phẩm “Lão Hạc” được sáng tác vào năm 1999?",
             "answer1":"Dung",
             "answer2":"Sai",
             "correct":"Sai"
          },
          {
-            "question":"Khi viết tổng 4+4+4 thành phép nhân thì hai thừa số lần lượt là: 5 và 4",
+            "question":"Văn học Việt Nam có một sức sống dẻo dai, mãnh liệt?",
             "answer1":"Dung",
             "answer2":"Sai",
-            "correct":"Sai"
+            "correct":"Dung"
          },
          {
-            "question":"Kết quả của: 40 – 7 x 5 = 165 ?",
+            "question":"Chữ nôm và chữ quốc ngữ giống nhau là đều ghi được âm Tiếng Việt?",
             "answer1":"Dung",
             "answer2":"Sai",
-            "correct":"Sai"
+            "correct":"Dung"
          },
          {
-            "question":"Kết quả của: 20 : 4 + 1 = 7 ?",
+            "question":"Văn học chữ Nôm được phát triển mạnh nhất vào giai đoạn từ thế kỷ XVII?",
             "answer1":"Dung",
             "answer2":"Sai",
             "correct":"Sai"
@@ -262,65 +262,65 @@
       ],
       "hard":[
          {
-            "question":"Issac Newton nổi tiếng nhờ phát minh ra calculus vào cuối thế kỷ 1660 ?",
-            "answer1":"Dung",
-            "answer2":"Sai",
-            "correct":"Dung"
-         },
-         {
-            "question":"Euclid là cha đẻ của giải tích ?",
+            "question":"Tác phẩm “Tam quốc diễn nghĩa” là tác phẩm của văn học Việt Nam?",
             "answer1":"Dung",
             "answer2":"Sai",
             "correct":"Sai"
          },
          {
-            "question":"Giáo sư Ngô Bảo Châu đạt giải thưởng toán học Fields vào năm 2010 ?",
+            "question":"Tác phẩm “Cảnh khuya - Hồ Chí Minh” là  tác phẩm văn học Trung đại Việt Nam?",
+            "answer1":"Dung",
+            "answer2":"Sai",
+            "correct":"Sai"
+         },
+         {
+            "question":"“Lòng yêu nước, niềm tự hào dân tộc” là nét đặc sắc truyền thống của văn học Việt Nam?",
             "answer1":"Dung",
             "answer2":"Sai",
             "correct":"Dung"
          },
          {
-            "question":"Carl Friedrich Gauss là nhà toán học người nước Pháp ?",
+            "question":"Chữ Nôm là loại chữ “loại chữ cổ của người Việt, dựa vào chữ Hán để ghi âm Tiếng Việt”?",
             "answer1":"Dung",
             "answer2":"Sai",
             "correct":"Dung"
          },
          {
-            "question":"Georg Cantor là nhà toán học người Nga sáng tạo ra số cardinal ?",
+            "question":"Thời kì văn học Việt Nam từ đầu thế kỉ XX - Cách mạng Tháng Tám 1945 có sự chuyển biến lớn là do cơ cấu xã hội Việt Nam thay đổi?",
             "answer1":"Dung",
             "answer2":"Sai",
-            "correct":"Dung"
+            "correct":"Sai"
          }
       ]
    },
    "science":{
       "easy":[
          {
-            "question":"Internet được ra đời vào năm 1969 ?",
+            "question":"Lá cây màu xanh là do diệp lục?",
             "answer1":"Dung",
             "answer2":"Sai",
             "correct":"Dung"
          },
          {
-            "question":"Việt nam hòa mạng Internet vào năm 1997 ?",
+            "question":"Cây quang hợp ban đêm?",
             "answer1":"Dung",
             "answer2":"Sai",
             "correct":"Sai"
          },
          {
-            "question":"Email được tạo ra bởi Ray Tomlinson vào năm 1972 ?",
+            "question":"Cá heo là động vật có vú?",
             "answer1":"Dung",
             "answer2":"Sai",
             "correct":"Dung"
          },
          {
-            "question":"Giao thức TCP/IP được tất cả máy tính sử udngj trên mạng ARPANET vào năm 1983 ?",
+            "question":"Ếch là loài động vật lưỡng cư?",
             "answer1":"Dung",
             "answer2":"Sai",
             "correct":"Dung"
          },
          {
-            "question":"Internet bùng nổ với sự xuất hiện của World Wide Web ( WWW) vào năm 1999 ?",
+            "question":"Trong quá trình quang hợp lá cây nhả ra oxi? ",
             "answer1":"Dung",
             "answer2":"Sai",
             "correct":"Dung"
@@ -328,63 +328,63 @@
       ],
       "medium":[
          {
-            "question":"Việt nam triển khai thử nghiệm có giới hạn khu vực mạng 4G vào năm 2014 ?",
+            "question":"Nio chiếm thể tích lớn nhất trong không khí?",
             "answer1":"Dung",
             "answer2":"Sai",
             "correct":"Dung"
          },
          {
-            "question":"4G được hiểu là tiêu chuẩn tương lai của các thiết bị không dây ?",
+            "question":"CO2 là tác nhân chính gây ra hiệu ứng nhà kính ? ",
+            "answer1":"Dung",
+            "answer2":"Sai",
+            "correct":"Dung"
+         },
+         {
+            "question":"Nước cất có tính dẫn điện?",
             "answer1":"Dung",
             "answer2":"Sai",
             "correct":"Sai"
          },
          {
-            "question":"Mạng 4G hiện hoạt động trên băng tần LTE ?",
+            "question":"Năng lượng sinh trong quá trình ma sát là nhiệt năng?",
             "answer1":"Dung",
             "answer2":"Sai",
             "correct":"Dung"
          },
          {
-            "question":"Dòng cận 4G gồm: LTE, WIMAX được gọi là tiền 4G ?",
+            "question":"Trái đất quay quanh mặt trăng?",
             "answer1":"Dung",
             "answer2":"Sai",
-            "correct":"Dung"
-         },
-         {
-            "question":"LTE chính là 4G",
-            "answer1":"Dung",
-            "answer2":"Sai",
-            "correct":"Dung"
+            "correct":"Sai"
          }
       ],
       "hard":[
          {
-            "question":"Mạng 5G có tốc độ nhanh hơn khoảng 10 lần mạng 4G hiện nay ?",
+            "question":"Trái đất tự quay quanh trục?",
             "answer1":"Dung",
             "answer2":"Sai",
             "correct":"Dung"
          },
          {
-            "question":"5G hoạt động ở các băng tần 28, 38, và 60Hz ?",
+            "question":"Tảo lục không đại diện cho thực vật?",
+            "answer1":"Dung",
+            "answer2":"Sai",
+            "correct":"Dung"
+         },
+         {
+            "question":"Cây rêu thường phát triển ở nơi khô ráo?",
             "answer1":"Dung",
             "answer2":"Sai",
             "correct":"Sai"
          },
          {
-            "question":"Theo lý thuyết tốc độ 5G có thể đạt đến 10Gbp/s",
+            "question":"Thế giới thực vật được chia làm 3 nhóm chính?",
             "answer1":"Dung",
             "answer2":"Sai",
-            "correct":"Dung"
+            "correct":"Sai"
          },
          {
-            "question":"Mạng 5G không thể đi xuyên qua tường, mái nhà ?",
-            "answer1":"Dung",
-            "answer2":"Sai",
-            "correct":"Dung"
-         },
-         {
-            "question":"5G có thể kết hợp cùng với Internet of Things (IoT) ?",
+            "question":"Thả rơi tự do là do lực hút của trái đất?",
             "answer1":"Dung",
             "answer2":"Sai",
             "correct":"Dung"
