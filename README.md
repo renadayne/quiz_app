@@ -1,7 +1,7 @@
 <h1 align="center">
     Quizzzz
 </h1>
-<p align="center"><b>Project made by</b></p>
+<p align="center"><b>PROJECT MADE BY</b></p>
 <p align="center">Nguyễn Huy Tú</p>
 <p align="center">Đỗ Xuân Hiểu</p>
 <p align="center">Nguyễn Huy Đạt</p>
